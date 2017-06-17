@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+</head>
+
+<body>
+<div id="teste"></div>
+
+<script>
+function mostrarHora () {
+	var d = new Date();
+	var h = d.getHours();
+	var m = d.getMinutes();
+	var s = d.getSeconds();
+	var r = h + ":" + m + ":" + s;
+	document.getElementById("teste").innerHTML = r;
+}
+
+setInterval(mostrarHora,1000);
+</script>
+
+</body>
+</html>
