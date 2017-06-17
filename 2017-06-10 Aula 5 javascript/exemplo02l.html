@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<script>
+var x = prompt("Digite um nuemro: ");
+var y = prompt("Digite um nuemro: ");
+var z = parseInt(x) + parseInt(y);
+alert(z);
+
+var a = 2;
+var c = "2";
+if (a===c)
+ alert("iguais");
+else
+ alert("não iguais");
+
+
+function mudar() {
+ alert("Mudando o tamanho, nome e cor de fonte");
+ var px = document.getElementById("x");
+ px.innerHTML = "teste";
+ px.style.fontSize = "28px";
+ px.style.color = "red";
+ px.style.display = none;
+ px.style.display = block;
+}
+</script>
+</head>
+
+<body>
+<p id="x">Aula</p>
+<input type="button" value="ok" onclick="mudar()";
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<script>
+var carros = new Array();
+carros[0] = "Uno";
+carros[1] = "Ka";
+carros[6] = "Fiesta";
+document.writeln(carros[1]);
+for (var i=0; i < carros.length; i++)
+  document.writeln(carros[i]);
+document.writeln(typeof(carros));
+<br>
+var alunos = [ "Carlos", "Ana", "Maria" ];
+alunos.sort();
+alunos[alunos.length] = "Mariana";
+alunos.push("Rita");
+for (var i=0; i < alunos.length; i++)
+  document.writeln(alunos[i]);
+
+
+<br>
+<br>
+var x = codificar("abc");
+document.writeln(x);
+
+
+function codificar (msg) {
+  var resposta = "";
+  for (var i = 0, i < msg.length; i++)
+    resposta = resposta + String.fromCharCode(msg.charCodeAt(i) + 3);
+	
+  return resposta;
+}
+
+function Data(); {
+var d = new Date90;
+document.writeln(d);
+var h = d.getHours();
+if ( (h>=12) && (h<=18) )
+  document.writeln("Boa Tarde");
+}
+
+function mostrarHora () {
+	var d = new Date();
+	var x = document.getElementById("relogio");
+	var h = d.getHours();
+	var m = d.getMinutes();
+	var s = d.getSeconds();
+	var r = h + "," + m + ":" + s;
+	document.writeln(r);
+	x.innerHTML = r;
+}
+
+</script>
+</head>
+
+<body>
+<script>
+</script>
+
+</body>
+</html>

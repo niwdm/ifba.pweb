@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<script>
+
+function quadrado () {
+ var pn = document.getElementById("num");
+ x = parseInt(pn.value);
+ alert(x*x);
+}
+
+function quadrado2 (x) {
+ alert(x*x);
+}
+
+function quadrado3 (x) {
+ var y = document.getElementById("num");
+ y.value = x*x;
+}
+</script>
+</head>
+
+<body>
+<form>
+<label>Numero:</label>
+<input type="text" id="num" />
+<input type="button" value="Calcular" onclick="quadrado3(form.num.value)" />
+</form>
+</body>
+</html>
