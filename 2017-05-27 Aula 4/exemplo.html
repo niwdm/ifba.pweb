@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos.css" >
+<style> </style>
+
+<title>Exemplo</title>
+
+</head>
+
+
+<header>
+<img src="vbox.png" alt="Nome Imagem" title="Titulo" longdesc="descrição longa"/> 
+<h1 style="text-align: center">IFBA</h1>
+<h2>Conquista/Ba</h2>
+</header>
+
+<nav>Navegação global</nav><br>
+
+<section>
+
+<em>Enfase</em><br>
+
+<strong>Enfase maior</strong><br>
+
+<!--
+<table style="border: 2px solid black">
+  <tr>
+    <th>Cidade</th>
+	<th>População</th>
+  <tr>
+    <td>Vitoria da Conquista/Ba</td>
+	<td>300.000</td>
+  </tr>
+  <tr>
+    <td>Vitoria da Conquista/Ba</td>
+	<td>300.000</td>
+  </tr>
+  <tr>
+    <td>Vitoria da Conquista/Ba</td>
+	<td>300.000</td>
+  </tr>
+</table>
+</section>
+-->
+
+<section>
+<form style="width: 50%">
+<fieldset>
+<legend>Dados pessoais</legend>
+Nome: <input type="text" name="name" pattern="[a-zA-Z]+"><br>
+CPF: <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato: 000.000.000-00" placeholder="xxx.xxx.xxx-xx"><br>
+Password: <input type="password" name="senha" pattern="[a-zA-Z0-9]{8,}"> <br>
+<input type="submit" value="Enviar dados"><br>
+<input type="reset" value="Limpar dados">
+</fieldset</form>
+</section>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #c3c3c3;">
+O navegador não suporta a tag canvas
+</canvas>
+
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(0,0,150,75);
+</script>
+
+</html>

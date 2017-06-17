@@ -1,0 +1,18 @@
+
+
+h1 {
+	color: red;
+	background-color: blue;
+	text-align: center;
+}
+
+p {
+	color: blue;
+	background-color: #FFA000;
+}
+
+table, th, td, tr {
+	border: 1px double black;
+	padding: 5px;
+	width: 50%;
+}
