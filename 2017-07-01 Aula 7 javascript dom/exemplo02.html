@@ -29,12 +29,26 @@ var xx = document.getElementById("x").value;
 e.appendChild(document.createTextNode(xx));
 }
 
+b4.onclick = function() {
+var f = document.getElementById("x").value;
+var x = document.getElementsByTagName("li");
+for (var i=0; i<x.length; i++) {
+	if(x[i].firstChild.nodeValue== f)
+		x[i].parentNode.removeChild(x[i]);
+	}
+}
+
 }
 </script>
 </head>
 
 <body>
 <h1>Universidades</h1>
+<form id="form">
+Universidade: <input type="text" id="x" />
+</form>
+<button id="b2">Incluir</button>
+<button id="b4">Remover</button>
 <ul>
 	<li>UFBA</li>
 	<li>IFBA</li>
@@ -45,10 +59,7 @@ e.appendChild(document.createTextNode(xx));
 <button id="b3">Listar</button>
 <br>
 <br>
-<form id="form">
-Universidade: <input type="text" id="x" />
-</form>
-<button id="b2">Incluir</button>
+
 
 </body>
 </html>
