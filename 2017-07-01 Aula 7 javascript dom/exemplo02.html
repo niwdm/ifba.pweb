@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Javascript DOM Exemplo 2 -->
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<script>
+window.onload = function() {
+b1.onclick = function() {
+var x = document.getElementsByTagName("h1");
+<!-- alert(x[0].nodeValue); nodeName=H1, nodeType=1, nodeValue=null -->
+if (x[0].innerHTML=== 'Universidades')
+	x[0].innerHTML = "Faculdades";
+else if (x[0].firstChild.nodeValue=== 'Faculdades')
+	x[0].innerHTML = "Universidades";
+}
+
+b3.onclick = function() {
+var x = document.getElementsByTagName("li");
+for (var i=0; i<x.length; i++)
+	alert(x[i].firstChild.nodeValue);
+}
+
+b2.onclick = function() {
+var lista = document.getElementsByTagName("ul");
+var f = lista[0];
+var e = document.createElement("li");
+f.appendChild(e);
+var xx = document.getElementById("x").value;
+e.appendChild(document.createTextNode(xx));
+}
+
+}
+</script>
+</head>
+
+<body>
+<h1>Universidades</h1>
+<ul>
+	<li>UFBA</li>
+	<li>IFBA</li>
+	<li>Fainor</li>
+	<li>UFMG</li>
+</ul>
+<button id="b1">Alterar Titulo</button>
+<button id="b3">Listar</button>
+<br>
+<br>
+<form id="form">
+Universidade: <input type="text" id="x" />
+</form>
+<button id="b2">Incluir</button>
+
+</body>
+</html>
+
+
+<!-- getElementById -->
+<!-- getElementsByTagName -->
