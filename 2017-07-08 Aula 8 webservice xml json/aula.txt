@@ -1,0 +1,36 @@
+Web Service
+XML
+Json
+
+Usar o programa XML Copy Editor
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<laboratorio>
+<computador>
+ <cpu>Intel</cpu>
+ <memoria>4GB</memoria>
+ 
+ <computador>
+ <cpu>Intel</cpu>
+ <memoria>4GB</memoria>
+ 
+ <computador>
+ <cpu>Intel</cpu>
+ <memoria>4GB</memoria>
+</computador>
+
+
+</laboratorio>
+
+XML com DTD
+
+XML Schema
+
+XPath - Xquery e Xslt
+
+Java DOM e Java SAX
+
+
+Ler o livro, Não me faça pensar
+
